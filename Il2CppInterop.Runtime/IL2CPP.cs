@@ -85,7 +85,7 @@ public static unsafe class IL2CPP
                 return method;
 
         var className = Marshal.PtrToStringAnsi(il2cpp_class_get_name(clazz));
-        Logger.Instance.LogTrace("Unable to find method {ClassName}::{Token}", className, token);
+        Logger.Instance.LogWarning("Unable to find method {ClassName}::{Token}", className, token);
 
         return NativeStructUtils.GetMethodInfoForMissingMethod(className + "::" + token);
     }
