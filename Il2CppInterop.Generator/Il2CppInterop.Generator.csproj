@@ -25,4 +25,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Il2CppInterop.Common\Il2CppInterop.Common.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Disarm">
+      <HintPath>..\..\..\..\Desktop\melon_data\MelonLoader\net8\Disarm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
